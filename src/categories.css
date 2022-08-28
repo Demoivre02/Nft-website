@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+* *::after *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.category-header{
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+}
+.category-header h3{
+    color: #313131;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.category-header h3 span{
+    color: #FF8C21;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.category-body{
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    font-family: 'work sans';
+    margin-block-start: 6em;
+    height: 83vh;
+    margin: auto auto 2em ;
+    width: 80%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding-inline-start: 5em;
+}
+h3.h3{
+    position: absolute;
+    background: linear-gradient(45deg, #0538FF 14.64%, #5799F7 85.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-block-start: .7em;
+    right: 3em;
+    font-size: 1.5rem;
+}
+.middle{
+    position: relative;
+    display:block;
+    margin: 0 auto;
+}
+@media (min-width:700px) and (max-width:1024px){
+    .grid{
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr;
+        grid-template-rows: 1fr 1fr ;
+        gap: 30px;
+        padding-inline-start: 2em;
+    }
+    .category-body{
+        background-color: transparent;
+        position: relative;
+        text-align: center;
+        font-family: 'work sans';
+        margin-block-start: 4em;
+        height: 30vh;
+        margin: auto auto 2em ;
+        width: 80%;
+        display: none;
+    }
+}
+@media (min-width:300px) and (max-width:700px){
+    .grid{
+        border: 2px solid red;
+        display: block;
+        gap: 10px;
+        display: flex;
+    }
+    .category-body{
+        background-color: transparent;
+        position: relative;
+        text-align: center;
+        font-family: 'work sans';
+        margin-block-start: 4em;
+        height: 30vh;
+        margin: auto auto 2em ;
+        width: 80%;
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+* *::before *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.content-body,.content-para{
+    width: 90%;
+    font-family: 'work sans';
+    position: relative;
+    margin: auto;
+    line-height: 1.5;
+    font-weight: lighter;
+    color: #000000a8;
+}
+.content-para{
+    font-weight: .5rem;
+}
+.content-heading h3{ 
+    color: #1a1a1a;
+    font-size: 20px;
+    padding: 0.3em;
+    letter-spacing: 2px;
+}
+.content-body:hover{
+    border: .2px solid #FF8C21;
+    border-radius: 10px;
+    filter: opacity(1.3);
+    background-color: whitesmoke;
+    backdrop-filter: blur(5px);
+}
+.content-body::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    border-radius: 12px;
+    height: 100%;
+    right: 0%;
+    top: 0%;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 250ms ease-in;
+}
+.content-body:hover::after{
+    transform: scaleY(1);
+}

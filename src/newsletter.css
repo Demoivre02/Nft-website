@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+* *::after *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.news-body{
+    text-align: center;
+    margin: auto;
+    font-family: 'work sans';
+    z-index: 2;
+    margin-top: 20em;
+}
+.news-para{
+    width: 35%;
+    color: #565656;
+    letter-spacing: 1px;
+    margin: auto;
+    font-size: 18px;
+    padding-block-end: 3em;
+}
+h2{
+    color: #313131;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0.5em;
+}
+.sec{
+    color:#ff8c21 ;
+    font-size: 2rem;
+ 
+}
+form{
+    display: flex;
+    margin: auto;
+    width: 35%;
+    justify-content: space-between;
+}
+input[type = text]{
+    background-color: #ffffff;
+    border: none;
+    width: 50%;
+    padding: .8em;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(194, 194, 194, .25);
+}
+input::placeholder{
+    font-size: 1rem;
+    color: black;
+
+}
+.subscribe{
+    background: linear-gradient(45deg, #0538FF 14.64%, #5799F7 85.36%);
+    color: #F2F2F2;
+    border-radius: 24px;
+    border: none;
+    padding: .2em .75em;
+    font-size: 1rem;
+    position: relative;
+    letter-spacing: 2px;
+}
+.subscribe::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   background-color: #F2F2F2;
+   filter: opacity(.5);
+   border-radius: 24px;
+   bottom: 0px;
+   left: 0px;
+   transform: scaleY(0);
+   transition: transform 150ms ease-in-out;
+}
+.subscribe:hover::before{
+    transform: scaleY(-1);
+}  
+@media  (max-width:1025px){
+    .news-body{
+        margin-top: 2em;
+    }
+    input[type = text]{
+        border-radius: 12px;
+        width: 100%;
+        margin: 1em auto;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        color: #313131;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0.5em;
+    }
+    .subscribe{
+        border-radius: 14px;
+        width: 100%;
+        margin: auto;
+    }
+}
+@media (min-width:300px) and (max-width:700px){
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .subscribe{
+        border-radius: 14px;
+        width: 40%;
+        margin: auto;
+        padding-block: .5em;
+    }
+    .news-para{
+        width: 75%;
+        color: #565656;
+        letter-spacing: 1px;
+        margin: auto;
+        font-size: 18px;
+        padding-block-end: 1em;
+    }
+    input[type = text]{
+        width: 80%;
+    }
+}

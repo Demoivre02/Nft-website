@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+* *::after *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.component-body{
+    border: 1px solid #000000;
+    font-family: 'work sans';
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    width: 30%;
+    padding: 0;
+    cursor: grab;
+    transition: padding 150ms ease-in;
+}
+.component-body:hover{
+    padding: 1em;
+}
+
+.component-image img{
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    width: 100%;
+    height: 290px;
+    pointer-events: none;
+}
+
+
+.component-text,.component-text p{
+    text-align: center;
+    color: #7d7d7d;
+}
+.component-price{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+.component-price h3{
+    color:  #313131;
+}
+@media (min-width:1000px) and (max-width:1275px){
+    .component-image img{
+        width: 100%;
+        height: 220px;
+    }
+    .component-price,.component-price h3{
+        display: block;
+        padding: 0;
+        margin: 0.1em;
+        margin-left: .5em;
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .component-image img{
+        width: 100%;
+        height: 185px;
+    }
+    .component-price,.component-price h3{
+        display: block;
+        padding: 0;
+        margin: 0.3em;
+    }
+    .component-text,.component-text p{
+        text-align: center;
+        color: #7d7d7d;
+        font-size: .8rem;
+    }
+    .component-body{
+        width: 45%;
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .component-image img{
+        width: 100%;
+        height: 165px;
+    }
+    .component-price,.component-price h3{
+        display: block;
+        padding: 0;
+        margin: 0 0.3em;
+    }
+    .component-body{
+        width: 55%;
+    }
+}
+@media (min-width:300px) and (max-width:700px){
+    .component-image img{
+        width: 150%;
+        height: 185px;
+    }
+    .component-price,.component-price h3{
+        display: block;
+        padding: 0;
+        margin: 0.3em;
+    }
+    .component-price{
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    .component-text,.component-text p{
+        text-align: center;
+        color: #7d7d7d;
+        font-size: .8rem;
+    }
+    .component-body{
+        width: 85%;
+    }
+}
